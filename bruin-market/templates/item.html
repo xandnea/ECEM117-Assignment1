@@ -3,5 +3,6 @@
 <h1>Item: {{ name }}</h1>
 <p>Price: {{ price }}</p>
 <p>Description</p>
-<p>{{ description | safe }}</p>
+<!-- Prev: <p>{{ description | safe }}</p> -->
+<iframe sandbox="allow-scripts" srcdoc="{{ description }}"></iframe>
 {% endblock %}
